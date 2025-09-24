@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: end;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: rgb(29, 29, 29);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(5, 80px);
+  grid-gap: 5px;
+}
+.calculator {
+  background-color: rgb(75, 75, 75);
+  padding: 20px;
+  border-radius: 24px;
+}
+#display {
+  height: 60px;
+  width: 312px;
+  margin-bottom: 17px;
+  border-radius: 10px;
+  cursor: auto;
+  background-color: rgb(217, 217, 217);
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  text-align: end;
+  padding: 10px;
+  color: black;
+}
+
+li {
+  background-color: gray;
+  border-radius: 7px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+#equal {
+  grid-row: span 2;
+  background-color: rgb(158, 235, 122);
+}
+li:hover {
+  background-color: rgb(39, 39, 39);
+  scale: (0.8);
+}
+#clear {
+  background-color: rgb(255, 92, 92);
+}
+#clear:hover {
+  scale: (0.8);
+  background-color: rgb(240, 58, 58);
+}
+#equal:hover {
+  scale: (0.8);
+  background-color: rgb(121, 224, 73);
+}
+.operators {
+  background-color: rgb(210, 210, 210);
+}
+.operators:hover {
+  background-color: rgb(255, 255, 255);
+  scale: (0.8);
+  color: black;
+}
+img {
+  background-color: rgb(164, 164, 164);
+  width: 30px;
+  border-radius: 50%;
+  padding: 2px;
+}
+img:hover {
+  background-color: white;
+  scale: (1.5);
+}
+.footer {
+  display: flex;
+  justify-content: start;
+  margin-top: 50px 0px;
+  gap: 100px;
+  padding: 20px;
+  width: 100%;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+a {
+  text-decoration: none;
+}
+@media (max-width: 650) {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 10px);
+    grid-template-rows: repeat(5, 10px);
+    grid-gap: 5px;
+  }
+}
