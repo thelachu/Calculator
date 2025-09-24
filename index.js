@@ -19,7 +19,7 @@ function updateTimeDate() {
   document.getElementById("date").textContent = date;
   document.getElementById("time").textContent = time;
 }
-
+let clickSound = new Audio("click.mp3");
 updateTimeDate();
 setInterval(updateTimeDate, 1000);
 
@@ -28,6 +28,9 @@ const buttons = document.querySelectorAll("ul li");
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
+    clickSound.pause();
+    clickSound.currentTime = 0;
+    clickSound.play();
     let value = btn.textContent;
 
     if (value === "C") {
